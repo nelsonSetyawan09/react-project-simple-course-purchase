@@ -1,0 +1,48 @@
+h3{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+.list-course{
+    list-style: none;
+    width: 60%;
+    margin: 0 auto;
+
+}
+.list-course li{
+    display: flex;
+    justify-content: space-between;   
+    background: rgb(34, 222, 255);
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    padding: 5px 10px;
+}
+.list-course li:first-child{
+    border-top: 1px solid gray;
+    border-radius: 4px 4px 0 0;
+}
+.list-course li:last-child{
+    border-radius:  0 0 4px 4px;
+}
+.list-course li:hover{
+    cursor: pointer;
+    background: rgb(10, 127, 145);
+    color: white;
+}
+.list-course li.active{
+    background: rgb(10, 127, 145);
+
+}
+
+
+@media (max-width: 600px){
+    .list-course{
+        width: 80%;
+    }
+}
+@media (max-width: 480px){
+    .list-course li{
+        font-size: 14px;
+    }
+}
